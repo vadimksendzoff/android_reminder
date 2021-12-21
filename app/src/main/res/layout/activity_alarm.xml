@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    tools:context=".activity.AlarmActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Reminde You"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:text="Reminde Desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="22:00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_50sdp" />
+
+    <TextView
+        android:id="@+id/tvSnooze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="SNOOZE"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/_30sdp" />
+
+    <TextView
+        android:id="@+id/tvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Done"
+        android:visibility="gone"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/_30sdp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvDismiss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="bottom|center"
+            android:text="DISMISS"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/_30sdp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHoldTheButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/_15sdp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="HOLD THE BUTTON"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/_30sdp"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+</LinearLayout>
+</layout>

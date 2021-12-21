@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            app:actionLayout="@layout/drawer_home_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_calendar"
+            app:actionLayout="@layout/drawer_calendar_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_done"
+            app:actionLayout="@layout/drawer_done_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_over_due"
+            app:actionLayout="@layout/drawer_overdue_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g5"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_today"
+            app:actionLayout="@layout/drawer_today_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g6"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_tomorrow"
+            app:actionLayout="@layout/drawer_tomorrow_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g7"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_upcoming"
+            app:actionLayout="@layout/drawer_upcoming_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g8"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            app:actionLayout="@layout/drawer_setting_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g9"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_help"
+            app:actionLayout="@layout/drawer_about_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g10"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_feedback"
+            app:actionLayout="@layout/drawer_feedback_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g11"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_rate"
+            app:actionLayout="@layout/drawer_rate_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+    <group
+        android:id="@+id/g12"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+            app:actionLayout="@layout/drawer_share_item_layout"
+            app:showAsAction="always"
+            tools:ignore="MenuTitle" />
+    </group>
+
+</menu>

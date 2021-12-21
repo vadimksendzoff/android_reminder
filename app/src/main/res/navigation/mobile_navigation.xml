@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.qrolic.reminderapp.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.qrolic.reminderapp.fragment.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.qrolic.reminderapp.fragment.AboutFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/nav_done"
+        android:name="com.qrolic.reminderapp.fragment.DoneReminderFragment"
+        android:label="Done"
+        tools:layout="@layout/fragment_done_reminder" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.qrolic.reminderapp.fragment.CalendarFragment"
+        android:label="Calendar"
+        tools:layout="@layout/fragment_calendar"/>
+
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.qrolic.reminderapp.fragment.TodayFragment"
+        android:label="Today"
+        tools:layout="@layout/fragment_today"/>
+
+    <fragment
+        android:id="@+id/nav_over_due"
+        android:name="com.qrolic.reminderapp.fragment.OverDueFragment"
+        android:label="OverDue"
+        tools:layout="@layout/fragment_over_due"/>
+
+    <fragment
+        android:id="@+id/nav_tomorrow"
+        android:name="com.qrolic.reminderapp.fragment.TomorrowFragment"
+        android:label="Tomorrow"
+        tools:layout="@layout/fragment_tomorrow"/>
+
+    <fragment
+        android:id="@+id/nav_upcoming"
+        android:name="com.qrolic.reminderapp.fragment.UpcomingFragment"
+        android:label="Upcoming"
+        tools:layout="@layout/fragment_upcoming"/>
+</navigation>

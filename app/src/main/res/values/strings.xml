@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Reminder</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help_doze_mode">Why are my task reminders not getting reported on time or not getting reported at all ?</string>
+    <string name="help_doze_mode_answer">You might be experiencing the system battery optimization software - Android Doze Mode - in action. Though being a great battery optimization software, sometimes it might kill the processes that should not be killed, amongst which is Reminder. In order to eliminate such inconveniences you need to whitelist the app in the settings of the Android Doze Mode.</string>
+    <string name="help_repeate_interval_que">How do I specify a custom repeat interval for my task ?</string>
+    <string name="help_repeate_interval_answer">When you create a new task or edit an existing one, tap the "Repeat" setting, you will be prompted with a dialog of repeat options thereafter; in the dialog select the "Custom" option and specify the repeat interval of your desire.</string>
+    <string name="help_contact_que">Didn\'t find the answer to your question?</string>
+    <string name="help_contact_answer">In such case, the best option for you would be to contact us directly and explain your issue in as much detail as possible; you can also include the relevant screenshots and/or screen recordings.</string>
+
+    <!--Admob ids -->
+    <string name="google_ads_application_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="google_ads_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

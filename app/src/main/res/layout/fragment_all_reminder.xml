@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.AllReminderFragment">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvOverDue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#F3F1F1"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/black"
+                android:padding="@dimen/_5sdp"
+                android:text="OverDue"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:drawableLeftCompat="@drawable/ic_baseline_today_24" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOverDueReminderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvToday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#F3F1F1"
+                android:visibility="gone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/_5sdp"
+                android:text="Today"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:drawableLeftCompat="@drawable/ic_baseline_today_24" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTodayReminderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#F3F1F1"
+                android:visibility="gone"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/_5sdp"
+                android:text="Tomorrow"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:drawableLeftCompat="@drawable/ic_baseline_today_24" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTomorrowReminderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="#F3F1F1"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="@dimen/_5sdp"
+                android:text="Upcoming"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                app:drawableLeftCompat="@drawable/ic_baseline_today_24" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvUpcomingReminderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:id="@+id/llEmptyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_baseline_alarm_24"
+                app:tint="@color/dark_gray" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="No Reminder Found"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

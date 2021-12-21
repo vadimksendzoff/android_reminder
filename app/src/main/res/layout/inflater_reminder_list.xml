@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_5sdp"
+    android:id="@+id/llItem"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.AllReminderFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivReminderMarker"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/full_rounded_courner"
+        android:visibility="visible" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_15sdp"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="03:12\npm" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/cvReminder"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/purple_200"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvReminderTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    app:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/white"
+                    android:maxLines="2"
+                    android:autoLink="phone"
+                    android:linksClickable="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:id="@+id/ivReportAs"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
+                    android:layout_gravity="right|center"
+                    android:tint="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/ic_baseline_more_vert_24"
+                    android:layout_gravity="right|center"
+                    android:paddingLeft="@dimen/_12sdp"
+                    android:id="@+id/ivDots"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="03/11/2021" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/white"
+                    android:text="Once" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:id="@+id/ivFavReminder"
+                    android:src="@drawable/ic_baseline_star_rate_24"
+                    android:layout_gravity="right|center"
+                    android:tint="@color/white" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout></layout>
