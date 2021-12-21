@@ -77,6 +77,8 @@ class AddNewReminder : AppCompatActivity(), View.OnClickListener {
             binder.etRemiderTitle.text = Editable.Factory.getInstance().newEditable(addNewReminderTable.title)
             selectedDate = simpleDateFormat.parse(addNewReminderTable.date)
             binder.tvAddNewRemiderDate.setText("${simpleDateFormat.format(selectedDate)}")
+            selectedTime = simpleTimeFormat12.parse(addNewReminderTable.time!!)
+            binder.tvAddNewRemiderTime.setText("${simpleTimeFormat12.format(selectedTime)}")
             selectedRepeat = addNewReminderTable.repeat!!
             binder.tvAddNewRemiderRepeat.text = selectedRepeat
             selectedReportAs = addNewReminderTable.reportAs!!
@@ -393,6 +395,9 @@ class AddNewReminder : AppCompatActivity(), View.OnClickListener {
         var checkedItem = 0
         materialDialogBuilder.setNeutralButton("Cancel") { dialog, which ->
             // Respond to neutral button press
+        }
+        materialDialogBuilder.setPositiveButton("Okay") { dialog, which ->
+            // Respond to positive button press
         }
 
         /*
